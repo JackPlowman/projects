@@ -24,7 +24,6 @@ jobs:
         with:
           fetch-depth: 0
           persist-credentials: false
-      # Lint and Format everything
       - name: Lint Code Base
         uses: super-linter/super-linter@12150456a73e248bdc94d0794898f94e23127c88 # v7.4.0
         env:
@@ -38,9 +37,9 @@ jobs:
     name: Common Code Checks
     permissions:
       contents: read
-      pull-requests: read
+      pull-requests: write
       security-events: write
-    uses: JackPlowman/reusable-workflows/.github/workflows/common-code-checks.yml@14445779094fde883fdb9f65946fcae6c25f46c0 # v2025.05.14.01
+    uses: JackPlowman/reusable-workflows/.github/workflows/common-code-checks.yml@eb21b6a4feabfb3a7e88690281dfc7280e9806f8 # v2025.05.18.01
     secrets:
       workflow_github_token: ${{ secrets.GITHUB_TOKEN }}
 
@@ -56,9 +55,9 @@ jobs:
           fetch-depth: 0
           persist-credentials: false
       - name: Initialize CodeQL
-        uses: github/codeql-action/init@60168efe1c415ce0f5521ea06d5c2062adbeed1b # v3.28.17
+        uses: github/codeql-action/init@ff0a06e83cb2de871e5a09832bc6a81e7276941f # v3.28.18
         with:
           languages: actions
           queries: security-and-quality
       - name: Perform CodeQL Analysis
-        uses: github/codeql-action/analyze@60168efe1c415ce0f5521ea06d5c2062adbeed1b # v3.28.17
+        uses: github/codeql-action/analyze@ff0a06e83cb2de871e5a09832bc6a81e7276941f # v3.28.18
