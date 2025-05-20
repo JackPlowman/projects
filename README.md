@@ -6,9 +6,12 @@ A repository to document what statuses projects can be in and track the status o
 
 - [Projects](#projects)
   - [Table of Contents](#table-of-contents)
+  - [Statuses](#statuses)
   - [Contributing](#contributing)
 
-<!-- Add documentation -->
+## Statuses
+
+Statuses are used to indicate the current state of a project. They can be found in the project's [STATUSES.md](./STATUSES.md).
 
 ## Contributing
 
