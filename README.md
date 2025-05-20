@@ -1,5 +1,7 @@
 # Projects
 
+A repository to document what statuses projects can be in and track the status of each project.
+
 ## Table of Contents
 
 - [Projects](#projects)
