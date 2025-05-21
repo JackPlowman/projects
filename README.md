@@ -49,7 +49,7 @@ Projects are listed below with their current status. All projects are created by
 | [TechInsight](https://github.com/JackPlowman/TechInsight)                                         |                                                                                                  |       |
 | [TechScanner](https://github.com/JackPlowman/TechScanner)                                         |                                                                                                  |       |
 | [test-project-status-checker](https://github.com/JackPlowman/test-project-status-checker)         |                                                                                                  |       |
-| [windows-development-environment](https://github.com/JackPlowman/windows-development-environment) |                                                                                                  |       |
+| [windows-development-environment](https://github.com/JackPlowman/windows-development-environment) | ![Maintenance](https://img.shields.io/badge/Maintenance-8A2BE2?style=for-the-badge&color=19e650)                                                                                                 |       |
 
 ## Contributing
 
