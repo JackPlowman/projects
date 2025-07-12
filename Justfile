@@ -1,4 +1,25 @@
 # ------------------------------------------------------------------------------
+# check_projects
+# ------------------------------------------------------------------------------
+
+export script := "check_projects.py"
+
+check-projects:
+    uv run --script ${script}
+
+# Run ruff checks
+ruff-checks:
+    uvx ruff check ${script} --select ALL
+
+# Fix all ruff issues
+ruff-fix:
+    uvx ruff check ${script} --fix --select ALL
+
+# Run ty type checks
+ty-check:
+    uvx ty check ${script}
+
+# ------------------------------------------------------------------------------
 # Prettier
 # ------------------------------------------------------------------------------
 
