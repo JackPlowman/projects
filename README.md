@@ -19,14 +19,14 @@ Statuses are used to indicate the current state of a project. They can be found 
 Projects are listed below with their current status. All projects are created by me, Jack Plowman. Forks are excluded from this list.
 
 | Project Name                                                                                      | Status                                                                                           | Notes |
-| ------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------ | ----- | --- |
+| ------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------ | ----- |
 | [actions-status](https://github.com/JackPlowman/actions-status)                                   |                                                                                                  |       |
 | [aws-timing-scripts](https://github.com/JackPlowman/aws-timing-scripts)                           |                                                                                                  |       |
 | [create-repository-tasks](https://github.com/JackPlowman/create-repository-tasks)                 |                                                                                                  |       |
 | [DependabotTrigger](https://github.com/JackPlowman/DependabotTrigger)                             |                                                                                                  |       |
 | [development-environment](https://github.com/JackPlowman/development-environment)                 |                                                                                                  |       |
 | [development-ideas](https://github.com/JackPlowman/development-ideas)                             |                                                                                                  |       |
-| [gitdash](https://github.com/JackPlowman/gitdash)                                                 |                                                                                                  |       |     |
+| [gitdash](https://github.com/JackPlowman/gitdash)                                                 |                                                                                                  |       |
 | [github-pr-analyser](https://github.com/JackPlowman/github-pr-analyser)                           |                                                                                                  |       |
 | [github-stats](https://github.com/JackPlowman/github-stats)                                       |                                                                                                  |       |
 | [github-stats-analyser](https://github.com/JackPlowman/github-stats-analyser)                     | ![Maintenance](https://img.shields.io/badge/Maintenance-8A2BE2?style=for-the-badge&color=19e650) |       |
