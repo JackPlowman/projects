@@ -83,7 +83,7 @@ jobs:
       - name: Install Ruff
         run: uv tool install ruff
       - name: Generate Ruff Sarif
-        run: uv run ruff check . 
+        run: uv run ruff check .
         env:
           RUFF_OUTPUT_FORMAT: "sarif"
           RUFF_OUTPUT_FILE: "ruff-results.sarif"
@@ -131,9 +131,7 @@ jobs:
           activate-environment: true
       - name: Install Ty
         run: uv tool install ty
-      - name: Sync Environment (time_lambda_durations.py)
-        run: uv sync --script time_lambda_durations.py --active
-      - name: Sync Environment (time_sfn_durations.py)
-        run: uv sync --script time_sfn_durations.py --active
+      - name: Sync Environment (check_projects.py)
+        run: uv sync --script check_projects.py --active
       - name: Check Python Code Types (ty) Checks
         run: uv tool run ty check .
