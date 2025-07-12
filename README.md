@@ -26,6 +26,7 @@ Projects are listed below with their current status. All projects are created by
 | [DependabotTrigger](https://github.com/JackPlowman/DependabotTrigger)                             |                                                                                                  |       |
 | [development-environment](https://github.com/JackPlowman/development-environment)                 |                                                                                                  |       |
 | [development-ideas](https://github.com/JackPlowman/development-ideas)                             |                                                                                                  |       |
+| [gitdash](https://github.com/JackPlowman/gitdash)                           |                                                                                                  |       |
 | [github-pr-analyser](https://github.com/JackPlowman/github-pr-analyser)                           |                                                                                                  |       |
 | [github-stats](https://github.com/JackPlowman/github-stats)                                       |                                                                                                  |       |
 | [github-stats-analyser](https://github.com/JackPlowman/github-stats-analyser)                     | ![Maintenance](https://img.shields.io/badge/Maintenance-8A2BE2?style=for-the-badge&color=19e650) |       |
@@ -50,6 +51,7 @@ Projects are listed below with their current status. All projects are created by
 | [TechInsight](https://github.com/JackPlowman/TechInsight)                                         |                                                                                                  |       |
 | [TechScanner](https://github.com/JackPlowman/TechScanner)                                         |                                                                                                  |       |
 | [test-project-status-checker](https://github.com/JackPlowman/test-project-status-checker)         |                                                                                                  |       |
+| [useful-commands](https://github.com/JackPlowman/useful-commands) | ![Maintenance](https://img.shields.io/badge/Maintenance-8A2BE2?style=for-the-badge&color=19e650) |
 | [windows-development-environment](https://github.com/JackPlowman/windows-development-environment) | ![Maintenance](https://img.shields.io/badge/Maintenance-8A2BE2?style=for-the-badge&color=19e650) |       |
 
 ## Contributing
