@@ -7,23 +7,26 @@
 # ]
 # ///
 
-from requests import get
 from github import Github
 from loguru import logger
-
+from requests import get
 
 
 def run() -> None:
     """Check that all repositories are mentioned in the README.md file."""
-
-    readme_contents = get("https://raw.githubusercontent.com/JackPlowman/projects/refs/heads/main/README.md")
+    readme_contents = get(
+        "https://raw.githubusercontent.com/JackPlowman/projects/refs/heads/main/README.md",
+        timeout=10,
+    )
     logger.info("Retrieved README.md contents from GitHub.")
 
     github = Github()
     repositories = github.search_repositories(
         query="user:JackPlowman archived:false is:public"
     )
-    logger.info(f"Found {repositories.totalCount} public repositories for user JackPlowman.")
+    logger.info(
+        f"Found {repositories.totalCount} public repositories for user JackPlowman."
+    )
 
     not_found = []
 
@@ -38,7 +41,9 @@ def run() -> None:
         logger.error("The following repositories were not found in README.md:")
         for repo_name in not_found:
             logger.error(f"- {repo_name}")
-        raise ValueError("Some repositories are missing from README.md.")
+        msg = "Some repositories are missing from README.md."
+        raise ValueError(msg)
+
 
 if __name__ == "__main__":
     run()

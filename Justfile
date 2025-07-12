@@ -15,6 +15,14 @@ ruff-checks:
 ruff-fix:
     uvx ruff check ${script} --fix --select ALL
 
+# Run ruff format check
+ruff-format-check:
+    uvx ruff format ${script} --check
+
+# Run ruff format fix
+ruff-format-fix:
+    uvx ruff format ${script} --fix
+
 # Run ty type checks
 ty-check:
     uvx ty check ${script}
