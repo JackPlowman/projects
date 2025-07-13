@@ -40,7 +40,7 @@ Projects are listed below with their current status. All projects are created by
 | [RepoOrchestrator](https://github.com/JackPlowman/RepoOrchestrator)                               |                                                                                                  |       |
 | [repository-template](https://github.com/JackPlowman/repository-template)                         |                                                                                                  |       |
 | [repository-visualiser](https://github.com/JackPlowman/repository-visualiser)                     |                                                                                                  |       |
-| [RepoSync](https://github.com/JackPlowman/RepoSync)                                               |                                                                                                  |       |
+| [RepoSync](https://github.com/JackPlowman/RepoSync)                                               | ![Maintenance](https://img.shields.io/badge/Maintenance-8A2BE2?style=for-the-badge&color=19e650) |       |
 | [reusable-workflows](https://github.com/JackPlowman/reusable-workflows)                           |                                                                                                  |       |
 | [screenshot_mailinator_email](https://github.com/JackPlowman/screenshot_mailinator_email)         | ![Maintenance](https://img.shields.io/badge/Maintenance-8A2BE2?style=for-the-badge&color=19e650) |       |
 | [SlocCount](https://github.com/JackPlowman/SlocCount)                                             | ![Development](https://img.shields.io/badge/Development-8A2BE2?style=for-the-badge&color=ff9500) |       |
