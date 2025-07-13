@@ -48,7 +48,9 @@ def run() -> None:
 
     for repo in repositories:
         not_found = check_repository_in_readme(
-            repo.name, readme_contents.text, not_found,
+            repo.name,
+            readme_contents.text,
+            not_found,
         )
 
     if not_found:
@@ -94,7 +96,9 @@ def convert_markdown_table_to_dict(readme_contents: str) -> dict:
 
 
 def check_repository_in_readme(
-    repo_name: str, readme_contents: str, not_found: list,
+    repo_name: str,
+    readme_contents: str,
+    not_found: list,
 ) -> list:
     """Check if a repository is mentioned in the README.md file."""
     if repo_name in readme_contents:
