@@ -48,7 +48,7 @@ Projects are listed below with their current status. All projects are created by
 | [status-sentinel](https://github.com/JackPlowman/status-sentinel)                                 |                                                                                                  |       |
 | [tech-radar](https://github.com/JackPlowman/tech-radar)                                           | ![Maintenance](https://img.shields.io/badge/Maintenance-8A2BE2?style=for-the-badge&color=19e650) |       |
 | [travel-map](https://github.com/JackPlowman/travel-map)                                           | ![Maintenance](https://img.shields.io/badge/Maintenance-8A2BE2?style=for-the-badge&color=19e650) |       |
-| [TechInsight](https://github.com/JackPlowman/TechInsight)                                         |                                                                                                  |       |
+| [TechInsight](https://github.com/JackPlowman/TechInsight)                                         | ![Development](https://img.shields.io/badge/Development-8A2BE2?style=for-the-badge&color=ff9500) |       |
 | [TechScanner](https://github.com/JackPlowman/TechScanner)                                         |                                                                                                  |       |
 | [test-project-status-checker](https://github.com/JackPlowman/test-project-status-checker)         | ![Maintenance](https://img.shields.io/badge/Maintenance-8A2BE2?style=for-the-badge&color=19e650) |       |
 | [useful-commands](https://github.com/JackPlowman/useful-commands)                                 | ![Maintenance](https://img.shields.io/badge/Maintenance-8A2BE2?style=for-the-badge&color=19e650) |       |
