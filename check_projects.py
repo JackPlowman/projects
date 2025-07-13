@@ -106,7 +106,7 @@ def check_repository_in_readme(
 
 
 def check_status_matches(incorrect_statuses: list, repo_name: str, status: str) -> list:
-    """Check if the status of a repository matches the expected status in the markdown table."""
+    """Check if the status of a repository matches the expected status in the markdown table."""  # noqa: E501
     badge = Badge[status]
     repo_readme = get(
         f"https://raw.githubusercontent.com/JackPlowman/{repo_name}/refs/heads/main/README.md",
@@ -117,7 +117,7 @@ def check_status_matches(incorrect_statuses: list, repo_name: str, status: str) 
         logger.info(f"Repository {repo_name} has the correct status badge.")
     else:
         logger.warning(
-            f"Repository {repo_name} does not have the correct status badge: {badge.value}"
+            f"Repository {repo_name} does not have the correct status badge: {badge.value}"  # noqa: E501
         )
         incorrect_statuses.append(repo_name)
 
