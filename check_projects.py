@@ -62,7 +62,7 @@ def run() -> None:
     incorrect_statuses = []
 
     for repo_name, status in repositories.items():
-        incorrect_statuses=check_status_matches(incorrect_statuses, repo_name, status)
+        incorrect_statuses = check_status_matches(incorrect_statuses, repo_name, status)
 
     if incorrect_statuses:
         logger.error("The following repositories have incorrect status badges:")
@@ -70,6 +70,7 @@ def run() -> None:
             logger.error(f"- {repo_name}")
         msg = "Some repositories have incorrect status badges."
         raise ValueError(msg)
+
 
 def convert_markdown_table_to_dict(readme_contents: str) -> dict:
     """Convert a markdown table to a dictionary."""
