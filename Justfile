@@ -21,7 +21,7 @@ ruff-format-check:
 
 # Run ruff format fix
 ruff-format-fix:
-    uvx ruff format ${script} --fix
+    uvx ruff format ${script}
 
 # Run ty type checks
 ty-check:
