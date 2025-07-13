@@ -8,11 +8,11 @@
 # ///
 
 from enum import Enum
+from re import sub
 
 from github import Github
 from loguru import logger
 from requests import get
-from re import sub
 
 STATUSES_FILE = (
     "https://raw.githubusercontent.com/JackPlowman/projects/refs/heads/main/STATUSES.md"
@@ -48,7 +48,7 @@ def run() -> None:
 
     for repo in repositories:
         not_found = check_repository_in_readme(
-            repo.name, readme_contents.text, not_found
+            repo.name, readme_contents.text, not_found,
         )
 
     if not_found:
@@ -94,7 +94,7 @@ def convert_markdown_table_to_dict(readme_contents: str) -> dict:
 
 
 def check_repository_in_readme(
-    repo_name: str, readme_contents: str, not_found: list
+    repo_name: str, readme_contents: str, not_found: list,
 ) -> list:
     """Check if a repository is mentioned in the README.md file."""
     if repo_name in readme_contents:
@@ -117,7 +117,7 @@ def check_status_matches(incorrect_statuses: list, repo_name: str, status: str) 
         logger.info(f"Repository {repo_name} has the correct status badge.")
     else:
         logger.warning(
-            f"Repository {repo_name} does not have the correct status badge: {badge.value}"  # noqa: E501
+            f"Repository {repo_name} does not have the correct status badge: {badge.value}",  # noqa: E501
         )
         incorrect_statuses.append(repo_name)
 
