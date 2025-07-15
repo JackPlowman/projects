@@ -36,7 +36,7 @@ Projects are listed below with their current status. All projects are created by
 | [projects](https://github.com/JackPlowman/projects)                                               |                                                                                                  |       |
 | [python-practise](https://github.com/JackPlowman/python-practise)                                 |                                                                                                  |       |
 | [repo_standards_validator](https://github.com/JackPlowman/repo_standards_validator)               |                                                                                                  |       |
-| [repo-overseer](https://github.com/JackPlowman/repo-overseer)                                     |                                                                                                  |       |
+| [repo-overseer](https://github.com/JackPlowman/repo-overseer)                                     | ![Maintenance](https://img.shields.io/badge/Maintenance-8A2BE2?style=for-the-badge&color=19e650) |       |
 | [RepoOrchestrator](https://github.com/JackPlowman/RepoOrchestrator)                               |                                                                                                  |       |
 | [repository-template](https://github.com/JackPlowman/repository-template)                         | ![Maintenance](https://img.shields.io/badge/Maintenance-8A2BE2?style=for-the-badge&color=19e650) |       |
 | [repository-visualiser](https://github.com/JackPlowman/repository-visualiser)                     |                                                                                                  |       |
