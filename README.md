@@ -33,7 +33,7 @@ Projects are listed below with their current status. All projects are created by
 | [JackPlowman](https://github.com/JackPlowman/JackPlowman)                                         |                                                                                                  |       |
 | [project-links](https://github.com/JackPlowman/project-links)                                     |                                                                                                  |       |
 | [project-status-checker](https://github.com/JackPlowman/project-status-checker)                   |                                                                                                  |       |
-| [projects](https://github.com/JackPlowman/projects)                                               |                                                                                                  |       |
+| [projects](https://github.com/JackPlowman/projects)                                               | ![Maintenance](https://img.shields.io/badge/Maintenance-8A2BE2?style=for-the-badge&color=19e650) |       |
 | [python-practise](https://github.com/JackPlowman/python-practise)                                 |                                                                                                  |       |
 | [repo_standards_validator](https://github.com/JackPlowman/repo_standards_validator)               |                                                                                                  |       |
 | [repo-overseer](https://github.com/JackPlowman/repo-overseer)                                     | ![Maintenance](https://img.shields.io/badge/Maintenance-8A2BE2?style=for-the-badge&color=19e650) |       |
