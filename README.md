@@ -24,7 +24,7 @@ Projects are listed below with their current status. All projects are created by
 | [aws-timing-scripts](https://github.com/JackPlowman/aws-timing-scripts)                           | ![Maintenance](https://img.shields.io/badge/Maintenance-8A2BE2?style=for-the-badge&color=19e650) |       |
 | [create-repository-tasks](https://github.com/JackPlowman/create-repository-tasks)                 | ![Maintenance](https://img.shields.io/badge/Maintenance-8A2BE2?style=for-the-badge&color=19e650) |       |
 | [DependabotTrigger](https://github.com/JackPlowman/DependabotTrigger)                             | ![Maintenance](https://img.shields.io/badge/Maintenance-8A2BE2?style=for-the-badge&color=19e650) |       |
-| [development-environment](https://github.com/JackPlowman/development-environment)                 |                                                                                                  |       |
+| [development-environment](https://github.com/JackPlowman/development-environment)                 | ![Maintenance](https://img.shields.io/badge/Maintenance-8A2BE2?style=for-the-badge&color=19e650) |       |
 | [development-ideas](https://github.com/JackPlowman/development-ideas)                             |                                                                                                  |       |
 | [gitdash](https://github.com/JackPlowman/gitdash)                                                 |                                                                                                  |       |
 | [github-pr-analyser](https://github.com/JackPlowman/github-pr-analyser)                           |                                                                                                  |       |
