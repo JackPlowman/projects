@@ -1,8 +1,8 @@
 # /// script
-# requires-python = ">=3.13"
+# requires-python = ">=3.14"
 # dependencies = [
 #     "loguru==0.7.3",
-#     "pygithub==2.7.0",
+#     "pygithub==2.8.1",
 #     "requests==2.32.5",
 # ]
 # ///
