@@ -18,3 +18,16 @@ updates:
         update-types:
           - "patch"
           - "minor"
+
+  - package-ecosystem: "uv"
+    directory: "/"
+    schedule:
+      interval: "cron"
+      cronjob: "30 7 * * *"
+      timezone: "Europe/London"
+    target-branch: "main"
+    groups:
+      python:
+        applies-to: "version-updates"
+        patterns:
+          - "*"
