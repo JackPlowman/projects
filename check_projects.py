@@ -1,13 +1,16 @@
+# Copyright (c) 2026 Jack Plowman
+
 # /// script
 # requires-python = ">=3.14"
 # dependencies = [
 #     "loguru==0.7.3",
-#     "pygithub==2.8.1",
-#     "requests==2.32.5",
+#     "pygithub==2.10.0",
+#     "requests==2.34.2",
 # ]
 # ///
 
 from enum import Enum
+from pathlib import Path
 from re import sub
 
 from github import Github
@@ -30,26 +33,25 @@ class Badge(Enum):
 
 def run() -> None:
     """Check that all repositories are mentioned in the README.md file."""
-    readme_contents = get(
-        "https://raw.githubusercontent.com/JackPlowman/projects/refs/heads/main/README.md",
-        timeout=10,
-    )
-    logger.info("Retrieved README.md contents from GitHub.")
+    readme_contents = Path(__file__).with_name("README.md").read_text(encoding="utf-8")
+    logger.info("Read README.md contents from the current checkout.")
 
     github = Github()
     repositories = github.search_repositories(
-        query="user:JackPlowman archived:false is:public",
+        query="user:JackPlowman archived:false is:public fork:false",
     )
     logger.info(
         f"Found {repositories.totalCount} public repositories for user JackPlowman.",
     )
 
     not_found = []
+    active_repositories = set()
 
     for repo in repositories:
+        active_repositories.add(repo.name)
         not_found = check_repository_in_readme(
             repo.name,
-            readme_contents.text,
+            readme_contents,
             not_found,
         )
 
@@ -60,11 +62,14 @@ def run() -> None:
         msg = "Some repositories are missing from README.md."
         raise ValueError(msg)
 
-    repositories = convert_markdown_table_to_dict(readme_contents.text)
+    project_statuses = convert_markdown_table_to_dict(readme_contents)
     incorrect_statuses = []
 
-    for repo_name, status in repositories.items():
-        incorrect_statuses = check_status_matches(incorrect_statuses, repo_name, status)
+    for repo_name, status in project_statuses.items():
+        if repo_name in active_repositories and status:
+            incorrect_statuses = check_status_matches(
+                incorrect_statuses, repo_name, status
+            )
 
     if incorrect_statuses:
         logger.error("The following repositories have incorrect status badges:")
@@ -82,15 +87,16 @@ def convert_markdown_table_to_dict(readme_contents: str) -> dict:
     current_projects_end = readme_lines.index("## Contributing") - 1
     data = {}
 
-    for line in readme_lines[current_projects_start + 6 : current_projects_end]:
+    for line in readme_lines[current_projects_start + 1 : current_projects_end]:
+        if not line.startswith("| ["):
+            continue
         # Remove link and instead use project name
         parts = [
             sub(r"!?\[([^\]]+)\]\([^)]+\)", r"\1", part).strip()
             for part in line.split("|")
-            if part.strip()
         ]
-        if len(parts) >= 2:  # noqa: PLR2004
-            data[parts[0]] = parts[1]
+        if len(parts) >= 4:  # noqa: PLR2004
+            data[parts[1]] = parts[2]
 
     return data
 
@@ -116,8 +122,9 @@ def check_status_matches(incorrect_statuses: list, repo_name: str, status: str) 
         f"https://raw.githubusercontent.com/JackPlowman/{repo_name}/refs/heads/main/README.md",
         timeout=10,
     )
+    repo_readme.raise_for_status()
 
-    if badge.value in repo_readme.text:
+    if badge.value.removesuffix("&label=Status)") in repo_readme.text:
         logger.info(f"Repository {repo_name} has the correct status badge.")
     else:
         logger.warning(
